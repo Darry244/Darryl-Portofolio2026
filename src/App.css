@@ -1,0 +1,131 @@
+body {
+    font-family: 'Gill Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    color:aliceblue;
+    font-weight: bold;
+}
+
+h2,h3 {
+    color:goldenrod;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+ul {
+    justify-content: left;
+}
+
+li {
+    justify-content: left;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 20px;
+    color:white;
+    background-color:dodgerblue;
+    text-align: center;
+    font-weight:bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.card  {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    background-color:#48A6F7;
+}
+
+nav ul {
+    margin-right: 2rem;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 20px
+}
+
+nav {
+    border-radius: 5px;
+    background-color: #4893D4;
+    padding: 3px;
+    position: static;
+    top: 0;
+    justify-content: end;
+    display: flex;
+}
+
+.gambar {
+    height: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Menempatkan gambar di tengah secara horizontal */
+    align-items: center; 
+  }
+  
+  img {
+    max-width: 100%; /* Agar gambar tidak melebihi ukuran layar */
+    height: auto;
+  }
+
+main {
+    padding: 20px;
+}
+
+header {
+    display: inline;
+}
+
+.galeri {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.galeri img {
+width: 400px;
+height: 300px;
+border: 2px solid #ff3d0036;
+border-radius: 13px;
+box-shadow: 4px 7px 7px 0px #00000042;
+cursor: pointer;
+margin: 10px;
+transition: 400ms;
+}
+
+
+.galeri img:hover {
+filter: grayscale(1);
+transform: scale(1.03);
+}
