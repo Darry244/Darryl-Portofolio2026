@@ -23,7 +23,9 @@ export default function App() {
       <header>
         <div className="jumbotron">
           <h1>Darryl Shaquiele Herniwan</h1>
+          <div className='opener'>
           <p>Selamat datang di web saya</p>
+          </div>
         </div>
 
         <nav>
@@ -42,9 +44,10 @@ export default function App() {
         <div id="content">
 
           <article id="Biografi" className="card">
-            <h2>Biografi</h2>
-            <img src={bioImg} alt="kumpul" width="400" />
+            <h2><b>Biografi</b></h2>
+            
             <div className="bio">
+              <img src={bioImg} alt="kumpul" width="400" />
               <p>
                 Saya lahir pada tanggal 28 September 2008 di Jakarta, selama masa kecil saya, saya tumbuh di Kota Bogor.
                 Pada tahun 2012, saya sempat pindah ke Pandeglang bersama ibu saya sekaligus menempuh pendidikan di TK dan SD kelas 1 sampai
@@ -89,14 +92,16 @@ export default function App() {
 
               <section>
                 <h3>Kegiatan non-sekolah</h3>
+                <div className="bio">
                 <img src={belajar} width='450px'/>
-                <p>
-                  Selain kegiatan internal sekolah, saya juga mengikuti kegiatan eksternal sekolah. Kebetulan saya juga adalah anggota
-                  OSIS SMK Wikrama Bogor dan aktif di Divisi IX terkait dengan dokumentasi kegiatan OSIS dan sekolah (bila diterlibatkan),
-                  ya, saya tertarik pada fotografi karena hobi saya adalah seorang <a href="#Railfanning">Railfans</a> atau penggemar kereta api.
-                  Ada berbagai kegiatan dokumentasi yang menjadi pengalaman terbaik bagi saya dalam kegiatan eksternal sekolah, salah satunya adalah
-                  saat mendokumentasikan pertandingan basket Wikrama Cup 2025.
-                </p>
+                  <p>
+                    Selain kegiatan internal sekolah, saya juga mengikuti kegiatan eksternal sekolah. Kebetulan saya juga adalah anggota
+                    OSIS SMK Wikrama Bogor dan aktif di Divisi IX terkait dengan dokumentasi kegiatan OSIS dan sekolah (bila diterlibatkan),
+                    ya, saya tertarik pada fotografi karena hobi saya adalah seorang <a href="#Railfanning">Railfans</a> atau penggemar kereta api.
+                    Ada berbagai kegiatan dokumentasi yang menjadi pengalaman terbaik bagi saya dalam kegiatan eksternal sekolah, salah satunya adalah
+                    saat mendokumentasikan pertandingan basket Wikrama Cup 2025.
+                  </p>
+                </div>
                 <div className="galeri">
                   <img src={basket1} />
                   <img src={basket2} />
@@ -125,18 +130,20 @@ export default function App() {
 
           <article id="Railfanning" className="card">
             <h2>Railfanning (Hobi saya)</h2>
-            <img src={treinen} alt="train" width="400"/>
-            <p>
-              pada tahun 2018 saya mencobakan diri untuk menjadi seorang Railfans dan pada tahun 2020 Subscriber saya ada sekitar 80 orang, 
-              awalnya konten youtube saya adalah konten hunting dan me-review perkiraan update bussid, pada Juli 2020 
-              karena waktu itu masih kecil/sebelum remaja tepatnya usia 12 tahun, saya ingin mengganti channel youtube saya 
-              menjadi RailSpotter TV, akan tetapi akun saya dinonaktifkan permanen karena waktu itu saya mengganti foto profil dan nama saya di laptop, 
-              keesokan harinya saya bisa membuat ulang akun kedua saya dan dinamakan menjadi Darryl Railfans kembali pada tahun 2021, dan saat ini, Subscriber Saya bertambah lebih banyak dari akun sebelumnya 
-              yang dinonaktifkan permanen yaitu sekitar lebih dari 900 Subscriber.<br />
-              Awalnya saya hunting kereta api di sekitar kota Bogor saja, dan dilokasi JPL 04 Stasiun Bogor Paledang. Akan tetapi titik lokasi hunting
-              keretanya mulai ke wilayah lainnya seperti Jl. R.E. Martadinata, Pasar Anyar dan Kedungbadak, bila ada acara keluarga, saya bisa hunting KA
-              di Bandung hingga Cibatu, atau bahkan lebih jauh. <b>Jangan lupa subscribe channel saya di Darryl Railfans</b>
-            </p>
+            <div className="bio">
+              <img src={treinen} alt="train" width="400"/>
+                <p>
+                  pada tahun 2018 saya mencobakan diri untuk menjadi seorang Railfans dan pada tahun 2020 Subscriber saya ada sekitar 80 orang, 
+                  awalnya konten youtube saya adalah konten hunting dan me-review perkiraan update bussid, pada Juli 2020 
+                  karena waktu itu masih kecil/sebelum remaja tepatnya usia 12 tahun, saya ingin mengganti channel youtube saya 
+                  menjadi RailSpotter TV, akan tetapi akun saya dinonaktifkan permanen karena waktu itu saya mengganti foto profil dan nama saya di laptop, 
+                  keesokan harinya saya bisa membuat ulang akun kedua saya dan dinamakan menjadi Darryl Railfans kembali pada tahun 2021, dan saat ini, Subscriber Saya bertambah lebih banyak dari akun sebelumnya 
+                  yang dinonaktifkan permanen yaitu sekitar lebih dari 900 Subscriber.<br />
+                  Awalnya saya hunting kereta api di sekitar kota Bogor saja, dan dilokasi JPL 04 Stasiun Bogor Paledang. Akan tetapi titik lokasi hunting
+                  keretanya mulai ke wilayah lainnya seperti Jl. R.E. Martadinata, Pasar Anyar dan Kedungbadak, bila ada acara keluarga, saya bisa hunting KA
+                  di Bandung hingga Cibatu, atau bahkan lebih jauh. <b>Jangan lupa subscribe channel saya di Darryl Railfans</b>
+                </p>
+            </div>
           </article>
 
           <article id="Pendidikan" className="card">
@@ -174,7 +181,9 @@ export default function App() {
       </main>
 
       <footer>
+        <div className='opener'>
         <p>© 2026 Darryl Shaquiele Herniwan</p>
+        </div>
       </footer>
     </>
   )

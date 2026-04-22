@@ -5,6 +5,10 @@ body {
     background-color: lightblue;
 }
 
+.opener p {
+    text-align: center;
+}
+
 h1 {
     font-family:'Times New Roman', Times, serif;
     color:aliceblue;
@@ -13,7 +17,12 @@ h1 {
 
 h2,h3 {
     color:goldenrod;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+p {
+    text-align: left;
 }
 
 ul {
@@ -24,9 +33,20 @@ li {
     justify-content: left;
 }
 
-img {
+.bio {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px; 
+}
+
+.bio img {
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bio p {
+    text-align: justify;
 }
 
 footer {
