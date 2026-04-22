@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import bioImg from "./assets/AhmedAryo.jpg"
+import bioImg from "./assets/potret.jpeg"
 import treinen from "./assets/Baturraden.jpg"
 import sertif1 from "./assets/SeritifikatJS.png"
 import sertif2 from "./assets/SertifikatCodeOrg.jpg"
@@ -32,7 +32,7 @@ export default function App() {
             <li><a href="#Sertifikat">Sertifikat</a></li>
             <li><a href="#Railfanning">Railfanning (Hobi)</a></li>
             <li><a href="#Pendidikan">Pendidikan</a></li>
-            <li><a href="#Revolusi">Revolusi Industri</a></li>
+            <li><a href="#Proyek">Proyek PPLG</a></li>
             <li><a href="#kontak">Kontak</a></li>
           </ul>
         </nav>
@@ -44,12 +44,14 @@ export default function App() {
           <article id="Biografi" className="card">
             <h2>Biografi</h2>
             <img src={bioImg} alt="kumpul" width="400" />
-            <p>
-              Saya lahir pada tanggal 28 September 2008 di Jakarta, selama masa kecil saya, saya tumbuh di Kota Bogor.
-              Pada tahun 2012, saya sempat pindah ke Pandeglang bersama ibu saya sekaligus menempuh pendidikan di TK dan SD kelas 1 sampai
-              saya naik kelas 2 pada tahun 2016. Kemudian saya balik lagi ke Bogor dan melanjutkan pendidikan dari SD, SMP dan SMK (saat ini) di
-              SMK Wikrama Bogor.
-            </p>
+            <div className="bio">
+              <p>
+                Saya lahir pada tanggal 28 September 2008 di Jakarta, selama masa kecil saya, saya tumbuh di Kota Bogor.
+                Pada tahun 2012, saya sempat pindah ke Pandeglang bersama ibu saya sekaligus menempuh pendidikan di TK dan SD kelas 1 sampai
+                saya naik kelas 2 pada tahun 2016. Kemudian saya balik lagi ke Bogor dan melanjutkan pendidikan dari SD, SMP dan SMK (saat ini) di
+                SMK Wikrama Bogor.
+              </p>
+            </div>
 
             <section>
                 <h3>Mengenal dunia programming</h3>
@@ -138,7 +140,7 @@ export default function App() {
           </article>
 
           <article id="Pendidikan" className="card">
-            Jenjang pendidikan saya
+            <h2>Jenjang pendidikan saya</h2>
           <ul>
             <li>TK Kartini (2013-2014)</li>
             <li>TK Kartika XIX Pandeglang (2014-2015)</li>
@@ -147,6 +149,16 @@ export default function App() {
             <li>SMP Islam Ibnu Hajar (2021-2024)</li>
             <li>SMK Wikrama Bogor (2024-2027)</li>
           </ul>
+          </article>
+
+          <article id="Proyek" className="card">
+            <h2>Daftar Proyek Praktikum PPLG saya</h2>
+            <ul>
+              <li><a href='https://darry244.github.io/Gelaralam/'>Website Kampung Adat Ciptagelar (kini Gelaralam)</a></li>
+              <li><a href='https://darry244.github.io/Kalkulator-CO2-test-/'>Kalkulator Jejak Karbon</a></li>
+              <li><a href='https://github.com/Darry244/DarrylShaquieleHerniwan-RepoSPPKB'>Aplikasi Sistem Pengecekan Pajak Kendaraan Bermotor (SPPKB)</a>, dan</li>
+              <li><a href='https://github.com/Darry244/DarrylShaquieleHerniwan-FlutterProfile'>Laman Profil Flutter</a></li>
+            </ul>
           </article>
           
           <article id="kontak" className="card">
@@ -162,7 +174,7 @@ export default function App() {
       </main>
 
       <footer>
-        <p>© 2024 Darryl Shaquiele Herniwan</p>
+        <p>© 2026 Darryl Shaquiele Herniwan</p>
       </footer>
     </>
   )
